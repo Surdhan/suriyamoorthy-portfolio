@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #020617;
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Text selection */
+::selection {
+  background: rgba(6, 182, 212, 0.3);
+  color: #ffffff;
+}
+
+/* =========================
+   HERO BACKGROUND
+========================= */
+
+.hero-bg {
+  background:
+    radial-gradient(circle at top left, rgba(6, 182, 212, 0.18), transparent 35%),
+    radial-gradient(circle at top right, rgba(20, 184, 166, 0.18), transparent 35%),
+    linear-gradient(to bottom, #020617, #0f172a);
+}
+
+/* =========================
+   GLASSMORPHISM (IMPROVED)
+========================= */
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.25),
+    inset 0 1px rgba(255, 255, 255, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.glass:hover {
+  border-color: rgba(6, 182, 212, 0.25);
+  box-shadow:
+    0 15px 50px rgba(6, 182, 212, 0.12),
+    inset 0 1px rgba(255, 255, 255, 0.06);
+}
+
+/* =========================
+   GRADIENT TEXT
+========================= */
+
+.gradient-text {
+  background: linear-gradient(90deg, #06b6d4, #14b8a6, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+   BUTTON SYSTEM (UNIFIED)
+========================= */
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Primary */
+.btn-primary {
+  background: linear-gradient(135deg, #06b6d4, #14b8a6);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(6, 182, 212, 0.3);
+}
+
+/* Secondary */
+.btn-secondary {
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fbbf24;
+}
+
+.btn-secondary:hover {
+  background: rgba(245, 158, 11, 0.1);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   PARTICLES (SOFTER)
+========================= */
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: #06b6d4;
+  opacity: 0.25;
+  animation: float 10s infinite ease-in-out;
+  filter: blur(0.5px);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-35px); }
+  100% { transform: translateY(0px); }
+}
+
+/* =========================
+   SCROLLBAR (MODERN)
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#06b6d4, #14b8a6);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #14b8a6;
+}
+
+/* =========================
+   ACCESSIBILITY FOCUS
+========================= */
+
+button:focus,
+a:focus {
+  outline: 2px solid #06b6d4;
+  outline-offset: 2px;
+}
+
+/* =========================
+   SECTION BASE
+========================= */
+
+section {
+  position: relative;
+}
