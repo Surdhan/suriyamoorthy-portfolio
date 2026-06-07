@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
-const profileImg = "/profile.png";
-const resumePDF = "/resume.pdf";
+const profileImg = `${import.meta.env.BASE_URL}profile.png`;
+const resumePDF = `${import.meta.env.BASE_URL}resume.pdf`;
 
 export default function Hero() {
   return (
@@ -113,21 +112,20 @@ export default function Hero() {
             </a>
 
             {/* Resume */}
-            <a
-              href={resumePDF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
-                px-8 py-4 rounded-2xl font-semibold
-                border border-amber-400
-                text-amber-300
-                hover:bg-amber-400
-                hover:text-black
-                transition-all duration-300
-              "
-            >
-              Download Resume
-            </a>
+           <a
+  href={resumePDF}
+  download="R_Suriyamoorthy_Resume.pdf"
+  className="
+    px-8 py-4 rounded-2xl font-semibold
+    border border-amber-400
+    text-amber-300
+    hover:bg-amber-400
+    hover:text-black
+    transition-all duration-300
+  "
+>
+  Download Resume
+</a>
 
             {/* GitHub */}
             <a
@@ -206,15 +204,16 @@ export default function Hero() {
               {/* Image */}
               <div className="w-full h-full rounded-full bg-slate-900 overflow-hidden flex items-center justify-center">
 
-                <img
-                  src={profileImg}
-                  alt="R Suriyamoorthy"
-                  className="w-full h-full object-cover rounded-full"
-                  onError={(e) => {
-                    e.target.src =
-                      "https://via.placeholder.com/400x400?text=R+Suriyamoorthy";
-                  }}
-                />
+               <img
+  src={profileImg}
+  alt="R Suriyamoorthy"
+  className="w-full h-full object-cover rounded-full"
+  onError={(e) => {
+    console.log("Failed image path:", profileImg);
+    e.currentTarget.src =
+      "https://via.placeholder.com/400x400?text=R+Suriyamoorthy";
+  }}
+/>
 
               </div>
             </div>
