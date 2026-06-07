@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Premium Cybersecurity Portfolio
 
 ## Setup
@@ -18,3 +19,7 @@ npm run build
 - Premium animations
 - SEO optimized
 - Responsive design
+=======
+# suriyamoorthy-portfolio
+My personal developer portfolio built using React and Tailwind CSS.
+>>>>>>> 1c51797189f51606b4ded6449fa362cf2dd8ca40
