@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://Surdhan.github.io/MY_profile",
+  "homepage": "https://surdhan.github.io/suriyamoorthy-portfolio/",
   "scripts": {
   "dev": "vite",
   "build": "vite build",
