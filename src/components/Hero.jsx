@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-const profileImg = "/suriyamoorthy-portfolio/profile.png";
-const resumePDF = "/suriyamoorthy-portfolio/resume.pdf";
+const profileImg = "/profile.png";
+const resumePDF = "/resume.pdf";
 
 export default function Hero() {
   return (
