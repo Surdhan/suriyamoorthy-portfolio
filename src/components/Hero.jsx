@@ -78,7 +78,7 @@ export default function Hero() {
           <div className="grid grid-cols-3 gap-5 mt-10 max-w-xl">
 
             <div className="glass p-5 rounded-2xl text-center border border-cyan-500/10">
-              <h3 className="text-3xl font-bold text-cyan-400">8.79</h3>
+              <h3 className="text-3xl font-bold text-cyan-400">8.49</h3>
               <p className="text-sm text-gray-400 mt-1">CGPA</p>
             </div>
 
